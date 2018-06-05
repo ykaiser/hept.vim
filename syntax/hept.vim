@@ -4,8 +4,9 @@ endif
 
 syn match heptNumber '\v<\d+>' display
 syn match heptNumber '[-+]\d\+\.\d*' display
-syn match heptColon  '\v<:>' display contains=heptType nextgroup=heptType
-syn match heptType   '\w\+' contained
+syn match heptType   ':\s*\zs\w\+\ze' display
+
+syn region heptBlock matchgroup=Operator start="let" end="tel" fold
 
 syn keyword heptKW open fun var let tel returns
 
