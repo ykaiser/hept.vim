@@ -8,7 +8,7 @@ syn match heptType   ':\s*\zs\w\+\ze' display
 
 syn region heptBlock matchgroup=Operator start="let" end="tel" fold
 
-syn keyword heptKW open fun var let tel returns node
+syn keyword heptKW open fun var let tel returns node map fold mapfold
 
 let b:current_syntax = "hept"
 
