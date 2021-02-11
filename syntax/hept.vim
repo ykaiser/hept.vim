@@ -20,12 +20,14 @@ syn keyword heptSP pre fby
 syn keyword heptPreProc open external fun
 syn keyword heptType int bool real res
 syn keyword heptCond if then else
+syn keyword heptConstBool true false
 
 syn match heptInit		"->"
 
 let b:current_syntax = "hept"
 
 hi def link heptNumber      Constant
+hi def link heptConstBool   Constant
 hi def link heptKW          Statement
 hi def link heptType        Type
 hi def link heptPreProc     PreProc
