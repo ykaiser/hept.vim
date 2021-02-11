@@ -9,21 +9,22 @@ Project involves custom syntax highlter and completion using UltiSnips
 
 ## Installing dependencies for Heptagon and Lustre
 ### Lustre V4 installation
-    - Appropriate distribution can be downloaded from [here](https://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v4/distrib/index.html). 
-    - Installation step is as simple as extracting the zip file. and setting some environment variables, Please check the [Installation step](https://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v4/distrib/linux64/README)
+    
+   - Appropriate distribution can be downloaded from [here](https://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v4/distrib/index.html). 
+   - Installation step is as simple as extracting the zip file. and setting some environment variables, Please check the [Installation step](https://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v4/distrib/linux64/README)
 
 ### Heptagon installation in debian based machines
 
-    Please note that there might be mutliple ways to install lustre, this  is just one of them.
+   Please note that there might be mutliple ways to install lustre, this  is just one of them.
 
-    -   Install ocaml ```sudo apt install ocaml```
-    -   Install opam  ``` sudo apt install opam```
-    -   Install dependencies 
+   -   Install ocaml ```sudo apt install ocaml```
+   -   Install opam  ``` sudo apt install opam```
+   -   Install dependencies 
 
         ``` sudo apt install mccs
             sudo apt install libgtk2.0-dev```
 
-    -   Install packages with opam
+   -   Install packages with opam
         ``` opam init --solver=mccs
             opam install menhir lablgtk ocamlgraph ocamlbuild camlp4
             opam install heptagon 
